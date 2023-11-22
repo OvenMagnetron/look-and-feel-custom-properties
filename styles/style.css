@@ -37,11 +37,8 @@ body {
     /* Spacings/heights */
     --button-height: 45px;
 
-    --primary-margin: 1em;
-    --secondary-margin: 2em;
-
-    --primary-padding: 1em;
-    --secondary-padding: 2em;
+    --primary-space: 1em;
+    --secondary-space: 2em;
 
     /* Borders */
     --button-radius: 5px;
@@ -49,6 +46,8 @@ body {
     /* Extra */
     --primary-transition: 0.3s;
 
+    background-color: var(--body-color);
+    font-family: AvenirMedium;
 
 }
 
@@ -57,6 +56,7 @@ body {
     color: #fff;
 }
 
+/* HTML - Buttons */
 .btn {
     width: auto;
     height: var(--button-height);
@@ -68,8 +68,8 @@ body {
     font-weight: var(--primary-weight);
     transition: var(--primary-transition);
     cursor: pointer;
-    margin-bottom: var(--primary-margin);
-    padding-inline: var(--primary-padding);
+    margin-bottom: var(--primary-space);
+    padding-inline: var(--primary-space);
 }
 
 .themebtn {
@@ -81,4 +81,33 @@ body {
     color: var(--tertiary-color);
     background-color: var(--quaternary--color);
     text-decoration: underline;
+}
+
+/* HTML - Forms */
+.input-field {
+    width: auto;
+    height: var(--button-height);
+    border: none;
+    padding-inline: var(--primary-space);
+    background-color: var(--quaternary--color);
+    color: var(--text-color);
+    outline: none;
+    font-size: var(--small-text);
+    transition: var(--primary-transition);
+    border-radius: var(--button-radius);
+}
+
+select {
+    background-color: var(--quaternary--color);
+    cursor: pointer;
+    border: none;
+    border-radius: var(--button-radius);
+    transition: var(--primary-transition);
+    padding: var(--primary-space);
+    margin-bottom: var(--secondary-space);
+}
+
+.searchForm {
+    display: flex;
+    gap: var(--primary-space);
 }

@@ -17,11 +17,40 @@
 </head>
 
 <body>
+    <h1>Welkom!</h1>
+    <hr>
+    <h2>Buttons</h2>
     <a href="#"><button class="btn">Ontdek meer <i class='bx bx-right-arrow-alt'></i></button></a>
     <a href="#"><button class="btn themebtn">Inloggen</button></a>
     <a href="#"><button class="btn linkbtn">Lees meer nieuws van de OBA <i
                 class='bx bx-right-arrow-alt'></i></button></a>
+    <h2>Search</h2>
+    <form class="searchForm">
+        <div>
+            <input type="radio" value="catalog" checked="checked">
+            <label for="catalog">Zoeken in de catalogus</label><br>
+            <input type="radio" value="website">
+            <label for="website">Zoeken binnen de site</label>
+        </div>
+        <input class="input-field" value="" type="text" name="query" placeholder="Waar ben je naar op zoek?">
+        <button type="submit" class="btn">Vind <i class='bx bx-right-arrow-alt'></i></button>
+    </form>
+    <select name="filters" id="filters">
+        <option value="1">Uitleendatum (aflopend)</option>
+        <option value="2">Uitleendatum (oplopend)</option>
+        <option value="3">A-Z</option>
+        <option value="4">Z-A</option>
+    </select>
 
+    <div class="input-wrapper">
+        <div class="input-group">
+            <input type="text" id="username" class="input-field" placeholder="Gebruikersnaam">
+        </div>
+
+        <div class="input-group">
+            <input type="password" id="password" class="input-field" placeholder="Wachtwoord">
+        </div>
+    </div>
 </body>
 
 </html>
