@@ -13,3 +13,72 @@
     font-family: AvenirBlack;
     src: url(../font/Avenir\ -black.ttf);
 }
+
+body {
+    /* Colors */
+    --body-color: #E4E9F7;
+    --primary-color: #FF0000;
+    --secondary-color: #fff;
+    --tertiary-color: #000;
+    --quaternary--color: #efefef;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+    --hover-color: #454545;
+
+    /* Font-sizes */
+    --header-text: 24px;
+    --large-text: 20px;
+    --medium-text: 18px;
+    --small-text: 16px;
+
+    /* Font-weight */
+    --primary-weight: 500;
+
+    /* Spacings/heights */
+    --button-height: 45px;
+
+    --primary-margin: 1em;
+    --secondary-margin: 2em;
+
+    --primary-padding: 1em;
+    --secondary-padding: 2em;
+
+    /* Borders */
+    --button-radius: 5px;
+
+    /* Extra */
+    --primary-transition: 0.3s;
+
+
+}
+
+::selection {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.btn {
+    width: auto;
+    height: var(--button-height);
+    border: none;
+    color: var(--secondary-color);
+    background-color: var(--tertiary-color);
+    border-radius: var(--button-radius);
+    font-size: var(--medium-text);
+    font-weight: var(--primary-weight);
+    transition: var(--primary-transition);
+    cursor: pointer;
+    margin-bottom: var(--primary-margin);
+    padding-inline: var(--primary-padding);
+}
+
+.themebtn {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.linkbtn {
+    color: var(--tertiary-color);
+    background-color: var(--quaternary--color);
+    text-decoration: underline;
+}
