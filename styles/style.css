@@ -276,7 +276,29 @@ a {
     font-weight: var(--secondary-weight);
 }
 
+
+/* Responsive */
 @media(max-width: 820px){
+    /* Forms */
+    .searchForm, .input-wrapper {
+        flex-direction: column;
+    }
+
+    /* Header */
+    nav{
+        overflow: hidden;
+    }
+    nav .icon {
+        font-size: var(--large-text);
+    }
+    nav a span{
+        display: none;
+    }
+
+    nav li{
+        margin: auto;
+    }
+    /* Carousel */
     .slider-box{
         flex-direction: column;
     }
